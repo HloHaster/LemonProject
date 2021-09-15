@@ -1,0 +1,444 @@
+body {
+    background-color: #C4C4C4;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.wrapper > div, .wrapper > header {
+    margin-bottom: 70px;
+}
+
+.header {
+    background: #F8F8F8;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 42px 100px;
+}
+
+.header__logo {
+    float: left;
+}
+
+.header__menu {
+    float: right;
+}
+
+.header__menu-item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header__menu a{
+    font: 300 normal 16px/36px 'Josefin Sans', sans-serif;
+    text-align: right;
+    letter-spacing: 0.0025em;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+.header__menu a:hover {
+    text-decoration: underline;
+}
+
+.header__submenu {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 90px;
+}
+
+.header__submenu-item {
+    padding-left: 6px;
+}
+
+.header__submenu-item:hover {
+    background-color: #DDDDDD;
+}
+
+.header__submenu a {
+    text-transform: none;
+}
+
+.header__menu-list li {
+    position: relative;
+}
+
+.header__submenu {
+    visibility: hidden;
+    position: absolute;
+}
+
+.header__menu-item:hover > .header__submenu,
+.header__submenu:hover {
+    visibility: visible;
+}
+
+/* Content Page Style */
+
+.content__page {
+    background: url("../img/HeroPage 1.png") right top no-repeat #C4C4C4;
+    min-height: 438px;
+    padding: 50px 0 45px 77px;
+}
+
+.page__content {
+    width: 360px;
+    padding: 29px 0 30px 0;
+}
+
+.page__title {
+    font: normal 24px/32px 'Playfair Display', serif;
+    letter-spacing: 0.0025em;
+    color: #911026;
+    margin-bottom: 26px;
+}
+
+.page_article {
+    font: normal normal 16px/16px 'Josefin Sans', sans-serif;
+    color: #555555;
+}
+
+.get__button {
+    display: inline-block;
+    padding: 8px 9px 5px 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #555555;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.0025em;
+    color: #555555;
+    text-transform: uppercase;
+}
+
+/*Content Recipes*/
+
+.content__recipes {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 41px 55px 44px 55px;
+}
+
+.content__recipes > .recipes__block {
+    width: 313px;
+    margin-right: 35px;
+    float: left;
+}
+
+.content__recipes > div:nth-child(3) {
+    margin-right: 0;
+}
+
+.recipes__image {
+    margin-bottom: 18px;
+}
+
+.recipes__title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.0025em;
+    color: #000000;
+    margin-bottom: 7px;
+}
+
+.recipes__time-block img{
+    margin: 0 4px 0 0;
+    height: 15px;
+}
+
+.recipes__time-block  span {
+    font: 300 12px/16px 'Open Sans', sans-serif;
+    letter-spacing: 0.0025em;
+    color: #555555;
+}
+
+/* Recipe Style */
+
+.content__recipe {
+    height: 438px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.recipe__image-block {
+    float: left;
+}
+
+.recipe__content-block {
+    float: right;
+    width: 497px;
+    margin-right: 68px;
+}
+
+.recipe__title {
+    font: 700 32px/43px "Playfair Display", serif;
+    letter-spacing: 0.0025em;
+    color: #055555;
+    margin-top: 30px;
+}
+
+.recipe__characteristics {
+    float: left;
+    width: 162px;
+    margin-top: 27px;
+}
+
+.recipe__characteristics .recipes__time-block {
+    float: left;
+    margin-top: 10px;
+}
+
+.content__recipe .recipes__time-block span {
+    font-size: 16px;
+}
+
+.recipe__difficulty-level {
+    float: right;
+}
+
+.recipe__difficulty-level span {
+    font: 400 18px/36px 'Josefin Sans', sans-serif;
+    letter-spacing: 0.0025em;
+    color: #555555;
+}
+
+.recipe__button {
+    float: right;
+    width: 105px;
+    margin-top: 36px;
+}
+
+
+.directions {
+    font: 300 normal 16px/20px "Josefin Sans", sans-serif;
+    margin-top: 47px;
+    color: #000000;
+    letter-spacing: -0.03em;
+
+    overflow-y: scroll;
+    height: 218px;
+    padding-right: 40px;
+}
+
+.recipe__subtitle {
+    margin: 20px 0;
+    font: bold normal 16px/20px "Josefin Sans", sans-serif;
+}
+
+.directions::-webkit-scrollbar {
+    width: 2px;
+    background-color: #DDDDDD;
+}
+
+.directions::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #555555;
+}
+
+/* Author Style */
+
+.author__block {
+    width: 518px;
+    padding: 20px 36px  79px 32px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    margin-right: 79px;
+}
+
+.author__block:nth-child(2) {
+    margin-right: 0;
+}
+
+.author__box-title {
+    font: normal italic 20px/20px 'Josefin Sans', sans-serif;
+    letter-spacing: 0.0025em;
+    color: #000000;
+    margin-left: 13px;
+}
+
+.line {
+    height: 2px;
+    background-color: #DDDDDD;
+    margin: 8px 11px 23px 6px;
+}
+
+.author__information .line {
+    margin: 8px 15px 23px 0;
+}
+
+.author__image-block {
+    float: left;
+    margin-right: 20px;
+}
+
+.author__information {
+    float: right;
+    width: 302px;
+}
+
+.name__author {
+    font: bold normal 20px/20px 'Josefin Sans', sans-serif;
+    letter-spacing: 0.0025em;
+    color: #000000;
+    margin-bottom: 7px;
+}
+
+.country__author {
+    font: 300 normal 16px/16px 'Josefin Sans', sans-serif;
+    letter-spacing: 0.0025em;
+    color: #000000;
+    margin-bottom: 11px;
+}
+
+.author__block .social_networks {
+    float: none;
+    margin-bottom: 16px;
+}
+
+.author__title {
+    font: normal italic 20px/20px 'Josefin Sans', sans-serif;
+    letter-spacing: 0.0025em;
+    color: #000000;
+    margin-bottom: 28px;
+}
+
+.author__text {
+    font: 300 italic 14px/14px 'Josefin Sans', sans-serif;
+    letter-spacing: -0.01em;
+    color: #000000;
+}
+
+/* Side Bar */
+
+.wrapper .content__side-bar {
+    width: 1000px;
+    margin: 0 auto 10px auto;
+}
+
+.side-bar__block {
+    width: 290px;
+    background: url("../img/side-bar-fon 1.png") center bottom no-repeat;
+    margin-bottom: 60px;
+    padding: 20px 22px 118px 18px;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.side-bar__block:nth-child(3n) {
+    margin-right: 0;
+}
+
+.side-bar__title {
+    font: 900 normal 32px/43px "Playfair Display", serif;
+    letter-spacing: 0.0025em;
+    color: #921026;
+    margin-bottom: 40px;
+}
+
+.side-bar__subtitle {
+    font: bold normal 22px/22px 'Josefin Sans', sans-serif;
+    letter-spacing: 0.0025em;
+    color: #000000;
+    margin-bottom: 17px;
+}
+
+.side-bar__text {
+    font: 300 italic 16px/16px 'Josefin Sans', sans-serif;
+    letter-spacing: 0.0025em;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+/* Footer Style */
+
+.footer {
+    background-color: #2F2F2F;
+    padding: 72px 52px 57px 85px;
+}
+
+.footer__links {
+    float: left;
+}
+
+.footer__rights {
+    float: right;
+}
+
+.footer__logo {
+    float: left;
+}
+
+.footer__menu {
+    float: right;
+    margin-left: 118px;
+}
+
+.footer__menu li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer__menu li:first-of-type {
+    margin-left: 0;
+}
+
+.footer__menu a{
+    font: 300 normal 12px/36px 'Josefin Sans', sans-serif;
+    color: #FEFEFE;
+    text-transform: uppercase;
+    letter-spacing: 0.0025em;
+}
+
+.footer__menu a:hover {
+    text-decoration: underline;
+}
+
+.footer__rights span{
+    font: 300 normal 12px/36px 'Josefin Sans', sans-serif;
+    color: #FEFEFE;
+    text-transform: uppercase;
+}
+
+.footer__rights img {
+    margin: 11px 5px;
+}
+
+.social_networks {
+    float: right;
+    margin-top: 12px;
+}
+
+.social_networks li {
+    display: inline-block;
+}
+
+.social_networks li:first-of-type {
+    margin-right: 8px;
+}
+
+.social_networks li:nth-child(2) {
+    margin-right: 18px;
+}
+
+/* Arrow */
+
+.arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/arrow-up.png") center no-repeat;
+    background-size: 100%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.clr {
+    clear: both;
+}
+
+
+
